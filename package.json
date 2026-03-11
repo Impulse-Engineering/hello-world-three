@@ -1,0 +1,13 @@
+{
+  "name": "hello-world-three",
+  "version": "1.0.0",
+  "description": "Hello World test app for Aseva LXC tier",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=20"
+  }
+}
