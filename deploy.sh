@@ -7,7 +7,7 @@ echo "[deploy] Pulling..."
 cd "${APP_DIR}" && git pull origin main
 
 echo "[deploy] Installing dependencies..."
-npm ci --quiet --omit=dev 2>&1
+npm install --quiet --omit=dev 2>&1
 
 echo "[deploy] Configuring port..."
 INTERNAL_PORT=$(grep -oP 'proxy_pass http://127\.0\.0\.1:\K\d+' /etc/nginx/sites-available/${APP_NAME})
